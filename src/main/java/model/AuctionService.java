@@ -12,7 +12,7 @@ public class AuctionService {
 
     private static AuctionService instance;
 
-    public AuctionService(Auction auction, Customer buyer, double amount) {
+    private AuctionService(Auction auction, Customer buyer, double amount) {
         bid(auction, buyer, amount);
     }
 
