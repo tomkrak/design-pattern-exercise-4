@@ -19,11 +19,11 @@ public class AuctionService {
     public AuctionService() {
     }
 
-    public static AuctionService getInstance(Auction auction, Customer buyer, double amount) {
+    public static AuctionService getInstance() {
         if (instance == null) {
             synchronized (AuctionService.class) {
                 if (instance == null) {
-                    instance = new AuctionService(auction, buyer, amount);
+                    instance = new AuctionService();
                 }
             }
         }
